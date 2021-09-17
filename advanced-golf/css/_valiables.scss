@@ -1,0 +1,35 @@
+//カラー指定
+$main-color: #86d6ff;
+$sub-color: #009ddd;
+$accent-color: #fff6e3;
+
+// メディアクエリ
+$breakPoints: (
+  'pc': '1280px',
+  'sp-wide': '812px',
+  'tablet': '768px',
+  'sp': '480px',
+) !default;
+
+// フォントサイズ
+$font-xs: 1.6em;
+$font-s: 1.8em;
+$font-m: 2em;
+$font-l: 2.4em;
+$font-xl: 3em;
+
+// マージンサイズ
+$mb-s: 5vh;
+$mb-m: 7vh;
+$mb-l: 9vh;
+
+// 「 」 ボーダー
+$bar-style: solid;
+$bar-size: 3px;
+$bar-color: $sub-color;
+
+// ヘッダー高さ
+$header-height: 6vh;
+
+// ファーストビュー高さ
+$fv-height: 100vh - $header-height;
