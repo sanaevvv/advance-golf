@@ -396,7 +396,7 @@
   background-size: cover;
   padding: 0 4vw;
   @include mq(tablet){
-    height: 2000px;
+    height: 2500px;
   }
   .method,
   .trainer {
@@ -435,9 +435,14 @@
     width: 20%;
   }
 }
-.flex-breathe {
-  display: flex;
+.grid-breathe {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
   padding: 30px 4vw;
+  @include mq(tablet){
+  grid-template-columns: 1fr;
+
+  }
 
   .img-wrapper-breathe {
     width: 40%;

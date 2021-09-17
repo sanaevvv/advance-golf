@@ -686,7 +686,7 @@ a.btn-border-gradient {
 
 @media screen and (max-width: 768px) {
   .profile {
-    height: 2000px;
+    height: 2500px;
   }
 }
 
@@ -737,28 +737,36 @@ a.btn-border-gradient {
   width: 20%;
 }
 
-.flex-breathe {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.grid-breathe {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   padding: 30px 4vw;
 }
 
-.flex-breathe .img-wrapper-breathe {
+@media screen and (max-width: 768px) {
+  .grid-breathe {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.grid-breathe .img-wrapper-breathe {
   width: 40%;
 }
 
-.flex-breathe .text-breathe {
+.grid-breathe .text-breathe {
   width: 60%;
 }
 
-.flex-breathe .breathe,
-.flex-breathe .posture {
+.grid-breathe .breathe,
+.grid-breathe .posture {
   font-weight: bold;
   font-size: 110%;
 }
 
-.flex-breathe .posture {
+.grid-breathe .posture {
   margin-top: 10px;
 }
 
