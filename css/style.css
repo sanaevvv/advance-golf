@@ -14,11 +14,6 @@
   }
 }
 
-.font-l {
-  font-size: 3em;
-  font-weight: bold;
-}
-
 .why {
   position: relative;
   font-weight: bold;
@@ -81,7 +76,7 @@
   display: inline;
   padding-bottom: 5px;
   border-bottom: 5px solid red;
-  font-size: clamp(1em, 2vw, 2em);
+  font-size: clamp(1.4em, 2vw, 2em);
   line-height: 2;
 }
 
@@ -102,6 +97,12 @@
   color: #fff;
   height: 1000px;
   padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .point {
+    height: 1500px;
+  }
 }
 
 .point .bg-brown {
@@ -152,6 +153,7 @@
   font-size: 2em;
   text-align: center;
   white-space: nowrap;
+  font-size: clamp(1.4em, 2vw, 2em);
   margin-top: clamp(10px, 1vh, 30px);
 }
 
@@ -219,6 +221,11 @@
   padding: 0 4vw;
 }
 
+.access_wrapper .font-l {
+  font-size: 2.2em;
+  font-weight: bold;
+}
+
 .access_wrapper .bg-grey {
   display: inline-block;
   width: 120px;
@@ -272,6 +279,12 @@ a.btn-border-gradient {
   background: #000;
 }
 
+@media screen and (max-width: 768px) {
+  a.btn-border-gradient {
+    font-size: 1.4em;
+  }
+}
+
 .btn-text-gradient--gold {
   font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'Hiragino Mincho ProN', 'HGS明朝E', 'ＭＳ Ｐ明朝', serif;
   background: -webkit-gradient(linear, left bottom, left top, from(#ffffdb), to(#a16422));
@@ -319,6 +332,12 @@ a.btn-border-gradient {
   margin: 50px 0;
 }
 
+@media screen and (max-width: 768px) {
+  .diagnosis .check {
+    font-size: 90%;
+  }
+}
+
 .diagnosis .diagnosis_ttl {
   position: absolute;
   top: 0;
@@ -339,10 +358,11 @@ a.btn-border-gradient {
       -ms-flex-pack: center;
           justify-content: center;
   font-weight: bold;
+  font-size: 0.9em;
 }
 
 .diagnosis .diagnosis_ttl span {
-  font-size: 200%;
+  font-size: 180%;
 }
 
 .btn {
@@ -422,14 +442,8 @@ a.btn-border-gradient {
 }
 
 .sub-ttl {
-  font-size: 3rem;
+  font-size: clamp(1.4em, 3vw, 3em);
   font-weight: bold;
-}
-
-.support_ttl {
-  font-size: 2em;
-  font-weight: bold;
-  margin-bottom: 20px;
 }
 
 .card {
@@ -449,7 +463,8 @@ a.btn-border-gradient {
 }
 
 .bg_lightgrey .bg-brown_wrapper .support_ttl {
-  height: 100px;
+  font-weight: bold;
+  height: 110px;
   position: absolute;
   top: 0;
   left: 0;
@@ -470,7 +485,7 @@ a.btn-border-gradient {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 1.6em;
+  font-size: 1.3em;
 }
 
 .bg_lightgrey .bg-brown_wrapper .support_ttl .font_l {
@@ -483,6 +498,7 @@ a.btn-border-gradient {
 }
 
 .change {
+  margin-top: 80px;
   background-image: url(../img/bg-gold-grad.png), url(../img/3month-change.png);
   background-size: 80%, cover;
   background-position: center;
@@ -519,7 +535,7 @@ a.btn-border-gradient {
       -ms-flex-align: center;
           align-items: center;
   font-weight: bold;
-  font-size: 2em;
+  font-size: clamp(0.95em, 3vw, 2em);
 }
 
 .display-grid {
@@ -539,6 +555,15 @@ a.btn-border-gradient {
   width: 90%;
   margin: 0 auto;
   text-shadow: 5px 3px 6px rgba(0, 0, 0, 0.64);
+}
+
+@media screen and (max-width: 768px) {
+  .display-grid {
+    height: 200px;
+    margin-top: 160px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 .display-grid li {
@@ -563,6 +588,12 @@ a.btn-border-gradient {
           box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.85);
 }
 
+@media screen and (max-width: 768px) {
+  .display-grid li {
+    height: 100px;
+  }
+}
+
 .program {
   background-image: url(../img/program.png);
   width: 100%;
@@ -572,10 +603,16 @@ a.btn-border-gradient {
   background-position: center;
 }
 
+@media screen and (max-width: 768px) {
+  .program {
+    height: 800px;
+  }
+}
+
 .program .program-ttl {
   color: #fff;
   font-weight: bold;
-  font-size: 2.4em;
+  font-size: 2.2em;
   text-align: center;
   background: #000;
   border-top: 2px solid #fff;
@@ -622,6 +659,12 @@ a.btn-border-gradient {
   gap: 30px;
 }
 
+@media screen and (max-width: 768px) {
+  .program-flex {
+    margin: 0 auto;
+  }
+}
+
 .program-flex .training {
   width: 50%;
   height: 300px;
@@ -642,6 +685,12 @@ a.btn-border-gradient {
           flex-direction: column;
 }
 
+@media screen and (max-width: 768px) {
+  .program-flex .training {
+    height: 400px;
+  }
+}
+
 .program-flex .bg-white {
   background: #fff;
   font-weight: bold;
@@ -649,6 +698,13 @@ a.btn-border-gradient {
   padding: 15px 20px;
   font-size: 1.4em;
   width: 90%;
+}
+
+@media screen and (max-width: 768px) {
+  .program-flex .bg-white {
+    font-size: 1.3em;
+    padding: 0 10px;
+  }
 }
 
 .program-flex .home-menu {
@@ -673,6 +729,13 @@ a.btn-border-gradient {
   padding: 20px 40px;
   margin: 20px;
   color: #434343;
+}
+
+@media screen and (max-width: 768px) {
+  .program-flex .bg-grey {
+    padding: 20px 10px;
+    margin: 0;
+  }
 }
 
 .profile {
@@ -749,15 +812,8 @@ a.btn-border-gradient {
   .grid-breathe {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    padding: 0 4vw;
   }
-}
-
-.grid-breathe .img-wrapper-breathe {
-  width: 40%;
-}
-
-.grid-breathe .text-breathe {
-  width: 60%;
 }
 
 .grid-breathe .breathe,
@@ -807,7 +863,7 @@ a.btn-border-gradient {
   color: #fff;
   font-weight: bold;
   text-align: center;
-  font-size: 1.8em;
+  font-size: clamp(1.2em, 3vw, 1.8em);
 }
 
 .mab-training {
@@ -840,7 +896,7 @@ a.btn-border-gradient {
   background-color: #000;
   left: 0;
   right: 0;
-  height: 400px;
+  height: 800px;
   border-top: 2px solid #fff;
   margin: 0 auto;
 }
@@ -865,7 +921,9 @@ a.btn-border-gradient {
 
 @media screen and (max-width: 768px) {
   .training-list {
-    font-size: 0,8em;
+    font-size: 0.8em;
+    -ms-grid-rows: (100px)[3];
+        grid-template-rows: repeat(3, 100px);
   }
 }
 
@@ -930,7 +988,7 @@ a.btn-border-gradient {
 }
 
 .trainingーenvironment span {
-  font-size: 3em;
+  font-size: clamp(1.4em, 3vw, 3em);
 }
 
 .environment-text {
@@ -1004,6 +1062,13 @@ a.btn-border-gradient {
   grid-area: sub3;
 }
 
+@media screen and (max-width: 768px) {
+  .body-facility-grid {
+    grid-template: 'main main main' 'txt txt txt' 'sub1 sub2 sub3' /1fr 1fr 1fr;
+    gap: 10px;
+  }
+}
+
 .training-facility-grid {
   display: -ms-grid;
   display: grid;
@@ -1027,6 +1092,13 @@ a.btn-border-gradient {
 
 .training-facility-grid .sub2 {
   grid-area: sub2;
+}
+
+@media screen and (max-width: 768px) {
+  .training-facility-grid {
+    grid-template: 'main main main' 'txt  txt  txt' 'sub1 sub1 sub2' /1fr 1fr 1fr;
+    gap: 10px;
+  }
 }
 
 .shapedividers_com-4952 {

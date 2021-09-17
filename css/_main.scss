@@ -7,10 +7,6 @@
     margin-bottom: 10px;
   }
 }
-.font-l {
-  font-size: $font-xl;
-  font-weight: bold;
-}
 
 // 呼吸に注目する理由
 .why {
@@ -64,7 +60,7 @@
     display: inline;
     padding-bottom: 5px;
     border-bottom: 5px solid red;
-    font-size: clamp(1em, 2vw, 2em);
+    font-size: clamp(1.4em, 2vw, 2em);
     line-height: 2;
   }
 }
@@ -125,6 +121,10 @@
   width: 800px;
   margin: 0 auto;
   padding: 0 4vw;
+  .font-l {
+    font-size: 2.2em;
+    font-weight: bold;
+  }
   .bg-grey {
     display: inline-block;
     width: 120px;
@@ -169,6 +169,9 @@
   .check {
     color: #fff;
     margin: 50px 0;
+    @include mq(tablet){
+      font-size: 90%;
+    }
   }
 
   .diagnosis_ttl {
@@ -182,8 +185,9 @@
     flex-direction: column;
     justify-content: center;
     font-weight: bold;
+    font-size: 0.9em;
     span {
-      font-size: 200%;
+      font-size: 180%;
     }
   }
 }
@@ -197,15 +201,10 @@
 }
 
 .sub-ttl {
-  font-size: 3rem;
+  font-size: clamp(1.4em, 3vw, 3em);
   font-weight: bold;
 }
 
-.support_ttl {
-  font-size: $font-m;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
 .card {
   box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.5);
   padding: 20px 4vw;
@@ -218,7 +217,8 @@
   .bg-brown_wrapper {
     position: relative;
     .support_ttl {
-      height: 100px;
+      font-weight: bold;
+      height: 110px;
       position: absolute;
       top: 0;
       left: 0;
@@ -230,7 +230,7 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      font-size: $font-xs;
+      font-size: 1.3em;
       .font_l {
         font-size: 3rem;
       }
@@ -244,6 +244,7 @@
 }
 
 .change {
+  margin-top: 80px;
   background-image: url(../img/bg-gold-grad.png), url(../img/3month-change.png);
   background-size: 80%, cover;
   background-position: center;
@@ -271,7 +272,7 @@
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    font-size: $font-m;
+    font-size: clamp(0.95em, 3vw, 2em);
   }
 }
 .display-grid {
@@ -286,6 +287,12 @@
   gap: 10px;
   width: 90%;
   margin: 0 auto;
+
+  @include mq(tablet) {
+    height: 200px;
+    margin-top: 160px;
+    grid-template-columns: 1fr;
+  }
   li {
     color: #fff;
     display: flex;
@@ -303,6 +310,9 @@
     );
     border: 2px solid #1591ac;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.85);
+    @include mq(tablet) {
+      height: 100px;
+    }
   }
   text-shadow: 5px 3px 6px rgba(0, 0, 0, 0.64);
 }
@@ -314,10 +324,13 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  @include mq(tablet) {
+    height: 800px;
+  }
   .program-ttl {
     color: #fff;
     font-weight: bold;
-    font-size: $font-l;
+    font-size: 2.2em;
     text-align: center;
     background: #000;
     border-top: 2px solid #fff;
@@ -355,6 +368,9 @@
   padding: 0 4vw;
   margin-top: 50px;
   gap: 30px;
+  @include mq(tablet) {
+    margin: 0 auto;
+  }
   .training {
     width: 50%;
     height: 300px;
@@ -364,6 +380,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    @include mq(tablet) {
+      height: 400px;
+    }
   }
   .bg-white {
     background: #fff;
@@ -372,6 +391,10 @@
     padding: 15px 20px;
     font-size: 1.4em;
     width: 90%;
+    @include mq(tablet) {
+      font-size: 1.3em;
+      padding: 0 10px;
+    }
   }
   .home-menu {
     width: 50%;
@@ -385,6 +408,10 @@
     padding: 20px 40px;
     margin: 20px;
     color: #434343;
+    @include mq(tablet) {
+      padding: 20px 10px;
+      margin: 0;
+    }
   }
 }
 
@@ -395,7 +422,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0 4vw;
-  @include mq(tablet){
+  @include mq(tablet) {
     height: 2500px;
   }
   .method,
@@ -436,20 +463,14 @@
   }
 }
 .grid-breathe {
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 30px 4vw;
-  @include mq(tablet){
-  grid-template-columns: 1fr;
-
+  @include mq(tablet) {
+    grid-template-columns: 1fr;
+    padding: 0 4vw;
   }
 
-  .img-wrapper-breathe {
-    width: 40%;
-  }
-  .text-breathe {
-    width: 60%;
-  }
   .breathe,
   .posture {
     font-weight: bold;
@@ -489,7 +510,7 @@
     color: #fff;
     font-weight: bold;
     text-align: center;
-    font-size: $font-s;
+    font-size: clamp(1.2em, 3vw, 1.8em);
   }
 }
 .mab-training {
@@ -519,7 +540,7 @@
     background-color: #000;
     left: 0;
     right: 0;
-    height: 400px;
+    height: 800px;
     border-top: 2px solid #fff;
     margin: 0 auto;
   }
@@ -535,8 +556,9 @@
   text-align: center;
   grid-gap: 20px;
   align-items: center;
-  @include mq(tablet){
-   font-size: 0,8em;
+  @include mq(tablet) {
+    font-size: 0.8em;
+    grid-template-rows: repeat(3, 100px);
   }
   li {
     background-color: #1591ac;
@@ -583,7 +605,7 @@
     z-index: -10;
   }
   span {
-    font-size: $font-xl;
+    font-size: clamp(1.4em, 3vw, 3em);
   }
 }
 .environment-text {
@@ -646,6 +668,14 @@
   .sub3 {
     grid-area: sub3;
   }
+  @include mq(tablet) {
+    grid-template:
+      'main main main'
+      'txt txt txt'
+      'sub1 sub2 sub3'
+      /1fr 1fr 1fr;
+    gap: 10px;
+  }
 }
 .training-facility-grid {
   display: grid;
@@ -668,6 +698,14 @@
   }
   .sub2 {
     grid-area: sub2;
+  }
+  @include mq(tablet) {
+    grid-template:
+      'main main main'
+      'txt  txt  txt'
+      'sub1 sub1 sub2'
+      /1fr 1fr 1fr;
+    gap: 10px;
   }
 }
 
