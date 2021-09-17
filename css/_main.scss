@@ -395,6 +395,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0 4vw;
+  @include mq(tablet){
+    height: 2000px;
+  }
   .method,
   .trainer {
     font-weight: bold;
@@ -416,14 +419,12 @@
     background: #f5f5f5;
     margin: 30px 0;
   }
-  .flex {
-    display: flex;
+  .profile-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
-    .img-wrapper {
-      width: 50%;
-    }
-    .bg-white {
-      width: 50%;
+    @include mq(tablet) {
+      grid-template-columns: 1fr;
     }
   }
 }
@@ -529,6 +530,9 @@
   text-align: center;
   grid-gap: 20px;
   align-items: center;
+  @include mq(tablet){
+   font-size: 0,8em;
+  }
   li {
     background-color: #1591ac;
     height: 100%;
