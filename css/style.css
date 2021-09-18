@@ -514,7 +514,7 @@ a.btn-border-gradient {
 .change {
   margin-top: 80px;
   background-image: url(../img/bg-gold-grad.png), url(../img/3month-change.png);
-  background-size: 80%, cover;
+  background-size: 70%, cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
@@ -527,7 +527,7 @@ a.btn-border-gradient {
   .change {
     background-image: url(../img/gold-arrow-down.png), url(../img/3month-change.png);
     background-position: 50% 150px, center;
-    background-size: 75%, cover;
+    background-size: 360px 650px, cover;
     height: 900px;
   }
 }
@@ -585,7 +585,7 @@ a.btn-border-gradient {
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   text-shadow: 5px 3px 6px rgba(0, 0, 0, 0.64);
 }
@@ -1045,9 +1045,15 @@ a.btn-border-gradient {
   width: 100%;
   top: 0;
   left: 0;
-  height: 4000px;
+  height: 3000px;
   position: absolute;
   z-index: -10;
+}
+
+@media screen and (max-width: 768px) {
+  .training-environment-wrapper::before {
+    height: 4000px;
+  }
 }
 
 .training-environment-wrapper .bg-white {
