@@ -523,6 +523,15 @@ a.btn-border-gradient {
   border-top: 2px solid #fff;
 }
 
+@media screen and (max-width: 768px) {
+  .change {
+    background-image: url(../img/gold-arrow-down.png), url(../img/3month-change.png);
+    background-position: 50% 150px, center;
+    background-size: 75%, cover;
+    height: 900px;
+  }
+}
+
 .change .bg-border-gold {
   position: absolute;
   width: 90%;
@@ -614,7 +623,7 @@ a.btn-border-gradient {
 
 @media screen and (max-width: 768px) {
   .display-grid li {
-    height: 100px;
+    height: 90px;
   }
 }
 
@@ -1017,6 +1026,7 @@ a.btn-border-gradient {
   padding: 0 2vw;
   margin: 100px 0;
   font-weight: bold;
+  line-height: 1.8;
 }
 
 .environment-text .result {
@@ -1035,7 +1045,7 @@ a.btn-border-gradient {
   width: 100%;
   top: 0;
   left: 0;
-  height: 2500px;
+  height: 4000px;
   position: absolute;
   z-index: -10;
 }

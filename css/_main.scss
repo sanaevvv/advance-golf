@@ -262,6 +262,13 @@
   height: 800px;
   position: relative;
   border-top: 2px solid #fff;
+  @include mq(tablet) {
+    background-image: url(../img/gold-arrow-down.png),
+      url(../img/3month-change.png);
+    background-position: 50% 150px, center;
+    background-size: 75%, cover;
+    height: 900px;
+  }
   .bg-border-gold {
     position: absolute;
     width: 90%;
@@ -324,7 +331,7 @@
     border: 2px solid #1591ac;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.85);
     @include mq(tablet) {
-      height: 100px;
+      height: 90px;
     }
   }
   text-shadow: 5px 3px 6px rgba(0, 0, 0, 0.64);
@@ -623,6 +630,7 @@
   padding: 0 2vw;
   margin: 100px 0;
   font-weight: bold;
+  line-height: 1.8;
 
   .result {
     color: #c8a063;
@@ -638,7 +646,7 @@
     width: 100%;
     top: 0;
     left: 0;
-    height: 2500px;
+    height: 4000px;
     position: absolute;
     z-index: -10;
   }
