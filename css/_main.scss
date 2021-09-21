@@ -723,6 +723,10 @@
     grid-area: sub1;
     height: 100%;
     object-fit: cover;
+    @include mq(tablet) {
+      height: auto;
+      object-fit: contain;
+    }
   }
   .sub2 {
     grid-area: sub2;
