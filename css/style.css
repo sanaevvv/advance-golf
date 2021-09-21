@@ -1132,9 +1132,6 @@ a.btn-border-gradient {
 
 .training-facility-grid .sub1 {
   grid-area: sub1;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .training-facility-grid .sub2 {
@@ -1145,6 +1142,10 @@ a.btn-border-gradient {
   .training-facility-grid {
     grid-template: 'main' 'txt' 'sub1' 'sub2' 320px /1fr;
     gap: 10px;
+  }
+  .training-facility-grid .sub1 {
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .training-facility-grid .sub2 {
     -o-object-fit: cover;
