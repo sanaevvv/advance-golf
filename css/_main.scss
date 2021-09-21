@@ -21,6 +21,7 @@
   // height: 100px;
   font-size: clamp(1.3em, 3.5vw, 2em);
   padding: 0 2vw;
+  text-shadow: 5px 3px 6px rgba(0, 0, 0, 0.64);
   &::before {
     content: ' ';
     // top: 0;
@@ -30,9 +31,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 1000px;
+    height: 1100px;
     z-index: -10;
-    background: #000;
+    background: #666666;
   }
 }
 
@@ -44,9 +45,12 @@
   background-position: center;
   width: 100%;
   height: 550px;
-  padding: 80px 0;
+  padding: 50px 0;
   background: #e5e5e5;
   box-shadow: 8px 8px #afb3bc;
+  @include mq(tablet) {
+    padding: 20px 0;
+  }
 
   .limit {
     margin-bottom: 20px;
@@ -58,7 +62,7 @@
     }
     .limit-text-small {
       text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
-      font-size: clamp(1.4em, 2vw, 2em);
+      font-size: clamp(1em, 2vw, 1.5em);
     }
   }
   .hard {
@@ -166,7 +170,7 @@
     width: 80%;
     border-radius: 5px;
     padding: 15px 20px;
-    margin: 0 auto;
+    margin: 50px auto;
     font-size: 1.4em;
     font-weight: bold;
     color: #434343;
@@ -175,11 +179,12 @@
     box-shadow: 0 0 4px #fff;
   }
   .price {
-    color: #ab0007;
-    margin: 50px 0;
-    font-size: 3.5em;
+    color: #434343;
+    margin: 20px 0;
+    font-size: clamp(2em, 3vw, 3em);
   }
   .check {
+    font-size: 1.4em;
     color: #fff;
     margin: 50px 0;
     @include mq(tablet) {
@@ -254,7 +259,7 @@
 
 .support_wrapper {
   padding: 0 4vw 30px;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .change {
@@ -298,6 +303,21 @@
     align-items: center;
     font-weight: bold;
     font-size: clamp(1.4em, 3vw, 2.6em);
+  }
+  .program-ttl {
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2.2em;
+    text-align: center;
+    background: #000000bd;
+
+    span {
+      font-size: 60%;
+    }
   }
 }
 .display-grid {
@@ -343,27 +363,17 @@
 }
 
 .program {
-  background-image: url(../img/program.png);
+  // background-image: url(../img/program.png);
+  background: #000;
   width: 100%;
-  height: 700px;
+  height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   @include mq(tablet) {
-    height: 800px;
+    height: 600px;
   }
-  .program-ttl {
-    color: #fff;
-    font-weight: bold;
-    font-size: 2.2em;
-    text-align: center;
-    background: #000;
-    border-top: 2px solid #fff;
-    border-bottom: 2px solid #fff;
-    span {
-      font-size: 60%;
-    }
-  }
+
   .arrow {
     width: 50%;
     padding: 20px 150px;
@@ -391,7 +401,6 @@
 .program-flex {
   display: flex;
   padding: 0 4vw;
-  margin-top: 50px;
   gap: 30px;
   @include mq(tablet) {
     margin: 0 auto;
@@ -400,7 +409,7 @@
     width: 50%;
     height: 300px;
     background: transparent;
-    border: 10px dashed #1591ac;
+    // border: 10px dashed #1591ac;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -518,7 +527,7 @@
     }
   }
   .font-l {
-    font-size: $font-l;
+    font-size: clamp(1.4em, 3vw, $font-l);
   }
 }
 .original-method {
@@ -633,7 +642,7 @@
 }
 .environment-text {
   padding: 0 2vw;
-  margin: 100px 0;
+  margin: 50px 0;
   font-weight: bold;
   line-height: 1.8;
 
@@ -651,7 +660,7 @@
     width: 100%;
     top: 0;
     left: 0;
-    height: 3000px;
+    height: 2300px;
     position: absolute;
     z-index: -10;
     @include mq(tablet) {

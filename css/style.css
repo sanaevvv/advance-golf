@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .first-view-wrapper {
-  background: #eee;
+  background: #e5e5e5;
   padding-bottom: 50px;
 }
 
@@ -30,6 +30,7 @@
   padding-top: 30px;
   font-size: clamp(1.3em, 3.5vw, 2em);
   padding: 0 2vw;
+  text-shadow: 5px 3px 6px rgba(0, 0, 0, 0.64);
 }
 
 .why::before {
@@ -38,9 +39,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 1000px;
+  height: 1100px;
   z-index: -10;
-  background: #000;
+  background: #666666;
 }
 
 .text-center {
@@ -51,10 +52,16 @@
   background-position: center;
   width: 100%;
   height: 550px;
-  padding: 80px 0;
+  padding: 50px 0;
   background: #e5e5e5;
   -webkit-box-shadow: 8px 8px #afb3bc;
           box-shadow: 8px 8px #afb3bc;
+}
+
+@media screen and (max-width: 768px) {
+  .text-center {
+    padding: 20px 0;
+  }
 }
 
 .text-center .limit {
@@ -70,7 +77,7 @@
 
 .text-center .limit .limit-text-small {
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
-  font-size: clamp(1.4em, 2vw, 2em);
+  font-size: clamp(1em, 2vw, 1.5em);
 }
 
 .text-center .hard {
@@ -325,7 +332,7 @@ a.btn-border-gradient {
   width: 80%;
   border-radius: 5px;
   padding: 15px 20px;
-  margin: 0 auto;
+  margin: 50px auto;
   font-size: 1.4em;
   font-weight: bold;
   color: #434343;
@@ -336,12 +343,13 @@ a.btn-border-gradient {
 }
 
 .diagnosis .price {
-  color: #ab0007;
-  margin: 50px 0;
-  font-size: 3.5em;
+  color: #434343;
+  margin: 20px 0;
+  font-size: clamp(2em, 3vw, 3em);
 }
 
 .diagnosis .check {
+  font-size: 1.4em;
   color: #fff;
   margin: 50px 0;
 }
@@ -509,7 +517,7 @@ a.btn-border-gradient {
 
 .support_wrapper {
   padding: 0 4vw 30px;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .change {
@@ -572,6 +580,22 @@ a.btn-border-gradient {
   font-size: clamp(1.4em, 3vw, 2.6em);
 }
 
+.change .program-ttl {
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+  color: #fff;
+  font-weight: bold;
+  font-size: 2.2em;
+  text-align: center;
+  background: #000000bd;
+}
+
+.change .program-ttl span {
+  font-size: 60%;
+}
+
 .display-grid {
   position: absolute;
   top: 0;
@@ -629,9 +653,9 @@ a.btn-border-gradient {
 }
 
 .program {
-  background-image: url(../img/program.png);
+  background: #000;
   width: 100%;
-  height: 700px;
+  height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -639,22 +663,8 @@ a.btn-border-gradient {
 
 @media screen and (max-width: 768px) {
   .program {
-    height: 800px;
+    height: 600px;
   }
-}
-
-.program .program-ttl {
-  color: #fff;
-  font-weight: bold;
-  font-size: 2.2em;
-  text-align: center;
-  background: #000;
-  border-top: 2px solid #fff;
-  border-bottom: 2px solid #fff;
-}
-
-.program .program-ttl span {
-  font-size: 60%;
 }
 
 .program .arrow {
@@ -689,7 +699,6 @@ a.btn-border-gradient {
   display: -ms-flexbox;
   display: flex;
   padding: 0 4vw;
-  margin-top: 50px;
   gap: 30px;
 }
 
@@ -703,7 +712,6 @@ a.btn-border-gradient {
   width: 50%;
   height: 300px;
   background: transparent;
-  border: 10px dashed #1591ac;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -874,7 +882,7 @@ a.btn-border-gradient {
 }
 
 .advanced .font-l {
-  font-size: 2.4em;
+  font-size: clamp(1.4em, 3vw, 2.4em);
 }
 
 .original-method {
@@ -1025,7 +1033,7 @@ a.btn-border-gradient {
 
 .environment-text {
   padding: 0 2vw;
-  margin: 100px 0;
+  margin: 50px 0;
   font-weight: bold;
   line-height: 1.8;
 }
@@ -1046,7 +1054,7 @@ a.btn-border-gradient {
   width: 100%;
   top: 0;
   left: 0;
-  height: 3000px;
+  height: 2300px;
   position: absolute;
   z-index: -10;
 }
