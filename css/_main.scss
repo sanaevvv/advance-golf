@@ -731,12 +731,11 @@
     grid-template:
       'main'
       'txt'
-      'sub1'
+      'sub1' 280px
       'sub2' 320px
       /1fr;
     gap: 10px;
     .sub1 {
-      height: auto;
       object-fit: contain;
     }
     .sub2 {

@@ -1143,11 +1143,10 @@ a.btn-border-gradient {
 
 @media screen and (max-width: 768px) {
   .training-facility-grid {
-    grid-template: 'main' 'txt' 'sub1' 'sub2' 320px /1fr;
+    grid-template: 'main' 'txt' 'sub1' 280px 'sub2' 320px /1fr;
     gap: 10px;
   }
   .training-facility-grid .sub1 {
-    height: auto;
     -o-object-fit: contain;
        object-fit: contain;
   }
