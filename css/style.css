@@ -84,7 +84,7 @@
   display: inline;
   padding-bottom: 5px;
   border-bottom: 5px solid red;
-  font-size: clamp(1.4em, 2vw, 2em);
+  font-size: clamp(1.3em, 2vw, 2em);
   line-height: 2;
 }
 
@@ -349,7 +349,7 @@ a.btn-border-gradient {
 }
 
 .diagnosis .check {
-  font-size: 1.4em;
+  font-size: 1.3em;
   color: #fff;
   margin: 50px 0;
   padding: 0 4vw;
@@ -379,8 +379,8 @@ a.btn-border-gradient {
 }
 
 .diagnosis .diagnosis_ttl span {
-  padding: 0 4vw;
-  font-size: clamp(1.8em, 4vw, 2.6em);
+  padding: 0 6vw;
+  font-size: clamp(1.7em, 4vw, 2.6em);
 }
 
 .btn {
@@ -474,6 +474,7 @@ a.btn-border-gradient {
 
 .bg_lightgrey {
   background: #e6d9ad85;
+  margin: 80px auto;
 }
 
 .bg_lightgrey .bg-brown_wrapper {
@@ -511,6 +512,12 @@ a.btn-border-gradient {
   font-size: 3.5rem;
 }
 
+@media screen and (max-width: 768px) {
+  .bg_lightgrey {
+    margin: 0;
+  }
+}
+
 .support_wrapper {
   padding: 0 4vw 30px;
   margin-top: 100px;
@@ -534,6 +541,7 @@ a.btn-border-gradient {
     background-position: 50% 150px, center;
     background-size: 360px 650px, cover;
     height: 950px;
+    margin-top: 0;
   }
 }
 
@@ -1037,7 +1045,7 @@ a.btn-border-gradient {
 
 .training-environment-wrapper {
   position: relative;
-  padding: 100px 4vw 80px;
+  padding: 100px 4vw 0;
 }
 
 .training-environment-wrapper::before {
