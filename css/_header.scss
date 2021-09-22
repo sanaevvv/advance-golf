@@ -1,4 +1,10 @@
+@import 'mixins';
+@import 'valiables';
+
 .first-view-wrapper {
   background: #e5e5e5;
   padding-bottom: 50px;
+  @include mq(other) {
+    padding-bottom: 0;
+  }
 }

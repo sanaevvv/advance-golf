@@ -187,7 +187,7 @@
     font-size: 1.3em;
     color: #fff;
     margin: 50px 0;
-    padding: 0 4vw;
+    padding: 0 8vw;
     // @include mq(tablet) {
     //   font-size: 90%;
     // }
@@ -205,9 +205,10 @@
     justify-content: center;
     font-weight: bold;
     font-size: 0.9em;
+    padding: 0 4vw;
     span {
       padding: 0 6vw;
-      font-size: clamp(1.7em, 4vw, 2.6em);
+      font-size: clamp(1.6em, 4vw, 2.6em);
     }
   }
 }
@@ -230,6 +231,9 @@
   padding: 20px 4vw;
   margin-bottom: 50px;
   background-color: #fff;
+  @include mq(other){
+    margin-bottom: 30px;
+  }
 }
 
 .container80 {
@@ -270,7 +274,7 @@
 }
 
 .support_wrapper {
-  padding: 0 4vw 30px;
+  padding: 0 4vw 10px;
   margin-top: 100px;
 }
 
@@ -667,7 +671,7 @@
 }
 .training-environment-wrapper {
   position: relative;
-  padding: 100px 4vw 0;
+  padding: 60px 4vw 0;
   &::before {
     content: '';
     background-color: #efefef;
