@@ -57,7 +57,7 @@
     height: 1000px;
     padding: 20px;
     @include mq(tablet) {
-      height: 1450px;
+      height: 170vh;
     }
 
     @include bg-brown;
