@@ -232,10 +232,18 @@
   background-color: #fff;
 }
 
+.container80{
+  margin:80px auto;
+  max-width: 1080px;
+
+  @include mq(tablet) {
+    margin: 0 auto;
+  }
+}
+
 .bg_lightgrey {
   // background: #f5f5f5;
   background: #e6d9ad85;
-  margin: 80px auto;
   .bg-brown_wrapper {
     position: relative;
     .support_ttl {
@@ -259,9 +267,7 @@
       }
     }
   }
-  @include mq(tablet) {
-    margin: 0;
-  }
+
 }
 
 .support_wrapper {

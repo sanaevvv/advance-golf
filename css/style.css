@@ -472,9 +472,19 @@ a.btn-border-gradient {
   background-color: #fff;
 }
 
+.container80 {
+  margin: 80px auto;
+  max-width: 1080px;
+}
+
+@media screen and (max-width: 768px) {
+  .container80 {
+    margin: 0 auto;
+  }
+}
+
 .bg_lightgrey {
   background: #e6d9ad85;
-  margin: 80px auto;
 }
 
 .bg_lightgrey .bg-brown_wrapper {
@@ -510,12 +520,6 @@ a.btn-border-gradient {
 
 .bg_lightgrey .bg-brown_wrapper .support_ttl .font_l {
   font-size: 3.5rem;
-}
-
-@media screen and (max-width: 768px) {
-  .bg_lightgrey {
-    margin: 0;
-  }
 }
 
 .support_wrapper {
