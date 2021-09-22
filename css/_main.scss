@@ -232,11 +232,11 @@
   background-color: #fff;
 }
 
-.container80{
-  margin:80px auto;
+.container80 {
+  margin: 80px auto;
   max-width: 1080px;
 
-  @include mq(tablet) {
+  @include mq(other) {
     margin: 0 auto;
   }
 }
@@ -267,7 +267,6 @@
       }
     }
   }
-
 }
 
 .support_wrapper {
@@ -291,6 +290,8 @@
     background-position: 50% 150px, center;
     background-size: 360px 650px, cover;
     height: 950px;
+  }
+  @include mq(other) {
     margin-top: 0;
   }
   .bg-border-gold {

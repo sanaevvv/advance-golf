@@ -477,7 +477,7 @@ a.btn-border-gradient {
   max-width: 1080px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1079px) {
   .container80 {
     margin: 0 auto;
   }
@@ -545,6 +545,11 @@ a.btn-border-gradient {
     background-position: 50% 150px, center;
     background-size: 360px 650px, cover;
     height: 950px;
+  }
+}
+
+@media screen and (max-width: 1079px) {
+  .change {
     margin-top: 0;
   }
 }
