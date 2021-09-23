@@ -87,19 +87,20 @@
     }
     .text-wrapper {
       padding: 0 4vw;
-    }
-    h2 {
-      font-weight: bold;
-      font-size: $font-m;
       text-align: center;
-      white-space: nowrap;
-      font-size: clamp(1.4em, 2vw, 2em);
-      margin-top: clamp(10px, 1vh, 30px);
-
-      img {
-        width: 70px;
+      .body-point-desc {
+        font-weight: bold;
+        font-size: $font-m;
+        text-align: center;
+        white-space: nowrap;
+        font-size: clamp(1.4em, 2vw, 2em);
+        margin-top: clamp(10px, 1vh, 30px);
+        img{
+          width: 70px;
+        }
       }
     }
+
     .bg-grey {
       background-color: #707070;
       padding: 10px;
