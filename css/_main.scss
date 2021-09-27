@@ -163,6 +163,10 @@
   padding: 0 0 60px;
   img {
     height: 100px;
+  
+    @include mq(other) {
+      padding: 0 4vw;
+    }
   }
   .bg_white {
     color: #000;
@@ -188,9 +192,6 @@
     color: #fff;
     margin: 50px 0;
     padding: 0 8vw;
-    // @include mq(tablet) {
-    //   font-size: 90%;
-    // }
   }
 
   .diagnosis_ttl {
@@ -231,7 +232,7 @@
   padding: 20px 4vw;
   margin-bottom: 50px;
   background-color: #fff;
-  @include mq(other){
+  @include mq(other) {
     margin-bottom: 30px;
   }
 }

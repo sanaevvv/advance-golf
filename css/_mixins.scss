@@ -7,29 +7,6 @@
   }
 }
 
-// ヘッダー固定
-@mixin fixed {
-  .header {
-    background-color: $main-color;
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    height: $header-height;
-    padding: 10px;
-    @include flex;
-  }
-}
-
-// フレックスボックス
-@mixin flex($gap: 10px, $jc: space-between) {
-  .flex {
-    display: flex;
-    align-items: center;
-    justify-content: $jc;
-    gap: $gap;
-  }
-}
-
 // フォントオーサム
 @mixin iconBefore($code) {
   .icon-before::before {
